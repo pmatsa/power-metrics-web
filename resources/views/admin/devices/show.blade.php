@@ -23,7 +23,7 @@
                   <option {{ in_array('I_L3', $charts) ? " selected" : " " }} value="I_L3"> Ένταση Ρεύματος L3</option>
                   <option {{ in_array('V_L1', $charts) ? " selected" : " " }} value="V_L1"> Τάση Ρεύματος L1</option>
                   <option {{ in_array('V_L2', $charts) ? " selected" : " " }} value="V_L2"> Τάση Ρεύματος L2</option>
-                  <option {{ in_array('V_L2', $charts) ? " selected" : " " }} value="V_L2"> Τάση Ρεύματος L3</option>
+                  <option {{ in_array('V_L3', $charts) ? " selected" : " " }} value="V_L3"> Τάση Ρεύματος L3</option>
                   <option {{ in_array('AE_L1', $charts) ? " selected" : " " }} value="AE_L1"> Ενεργός Ενέργεια L1</option>
                   <option {{ in_array('AE_L2', $charts) ? " selected" : " " }} value="AE_L2"> Ενεργός Ενέργεια L2</option>
                   <option {{ in_array('AE_L3', $charts) ? " selected" : " " }} value="AE_L3"> Ενεργός Ενέργεια L3</option>
