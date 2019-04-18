@@ -401,8 +401,8 @@ return [
         ],
     ],
     'auditLog' => [
-        'title' => 'Audit Logs',
-        'title_singular' => 'Audit Log',
+        'title' => 'Αρχεία Ελέγχου',
+        'title_singular' => 'Αρχείο Ελέγχου',
         'fields' => [
             'id' => 'ID',
             'id_helper' => '',
