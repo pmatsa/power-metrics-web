@@ -33,7 +33,7 @@
               <div class="icon">
                 <i class="fas fa-digital-tachograph"> </i>
               </div>
-              <a href="{{ route('admin.devices.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.devices.index') }}" class="small-box-footer">περισσότερα <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -48,7 +48,7 @@
               <div class="icon">
                 <i class="fas fa-ellipsis-h"> </i>
               </div>
-              <a href="{{ route('admin.device-types.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.device-types.index') }}" class="small-box-footer">περισσότερα <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -63,7 +63,7 @@
               <div class="icon">
                 <i class="fas fa-users"></i>
               </div>
-              <a href="{{ route('admin.users.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              <a href="{{ route('admin.users.index') }}" class="small-box-footer">περισσότερα <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
