@@ -16,6 +16,7 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "laraveldaily/laravel-charts": "^0.1.0",
+        "muhamadrezaar/highcharts": "dev-master",
         "yajra/laravel-datatables-oracle": "~9.0"
     },
     "require-dev": {

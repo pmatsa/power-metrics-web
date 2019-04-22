@@ -48,7 +48,7 @@
                </select>
             </div>
             <p>&nbsp;</p>
-            <label>Εύρος ημερομηνίας γραφήματος: </label>
+            <label>Εύρος ημερομηνίας γραφήματος (max. 90 ημέρες): </label>
             <div class="input-group-prepend">
                <span class="input-group-text">
                <i class="fa fa-calendar"></i>
@@ -130,7 +130,7 @@
       endDate: moment('{{ $endDate }}', 'YYYY-MM-DD'),
       maxDate: moment(),
       maxSpan: {
-           "days": 60
+           "days": 90
        },
       locale: {
          format: 'YYYY-MM-DD'

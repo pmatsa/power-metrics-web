@@ -111,7 +111,6 @@ class DevicesController extends Controller
         $endDate = $request->daterange == null ? date('Y-m-d') : substr($request->daterange, -10);
         $startDate = $request->daterange == null ? date('Y-m-d', strtotime("-1 days")) : substr($request->daterange, 0, 10);
         $charts = $request->charts == null ? array('FREQ') : $request->charts;
-        $limit = 10000;
 
         $metricsChart = new DeviceChart($uid, $endDate, $startDate, "50000");
 
