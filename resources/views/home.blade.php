@@ -92,8 +92,8 @@
                       <td>{{ $device->uid}}</td>
                       <td>{{ $device->name}}</td>
                       <td>{{ $device->sector->name}}</td>
-                      <td><span class="badge bg-info">{{ $device->device_type->name }}</span></td>
-                      <td>{{ $device->created_at}}</td>
+                      <td><span class="badge bg-warning">{{ $device->device_type->name }}</span></td>
+                      <td><span class="badge bg-primary">{{ $device->created_at}}</span></td>
                     </tr>
                   @endforeach
                 </tbody></table>
@@ -116,9 +116,9 @@
                   </tr>
                   @foreach($latest_users as $user)
                     <tr>
-                      <td>{{ $user->name}}</td>
+                      <td><b>{{ $user->name}} </b></td>
                       <td>{{ $user->email}}</td>
-                      <td>{{ $user->created_at}}</td>
+                      <td><span class="badge bg-primary">{{ $user->created_at}}</span></td>
                     </tr>
                   @endforeach
                 </tbody></table>
