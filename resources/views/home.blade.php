@@ -11,7 +11,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>2</h3>
+                <h3>{{ $sectors}}</h3>
 
                 <p> καταχωρημένοι τομείς </p>
               </div>
@@ -26,7 +26,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>5</h3>
+                <h3>{{ $devices }}</h3>
 
                 <p>καταχωρημένες συσκευές</p>
               </div>
@@ -41,7 +41,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>4</h3>
+                <h3> {{ $device_types }}</h3>
 
                 <p>καταχωρημένοι τύποι συσκευών</p>
               </div>
@@ -56,7 +56,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>3</h3>
+                <h3> {{ $users }}</h3>
 
                 <p>καταχωρημένοι χρήστες</p>
               </div>
