@@ -11,11 +11,14 @@ class HomeController
 {
     public function index()
     {
-        $sectors = Sector::count();
-        $devices = Device::count();
-        $device_types = DeviceType::count();
-        $users = User::count();
+        $sectors_count = Sector::count();
+        $devices_count = Device::count();
+        $device_types_count = DeviceType::count();
+        $users_count = User::count();
 
-        return view('home', compact('sectors', 'devices', 'device_types', 'users'));
+        $latest_users = User::orderBy('id', 'desc')->take(5)->get();
+        $latest_devices = Device::orderBy('id', 'desc')->take(5)->get();
+
+        return view('home', compact('sectors_count', 'devices_count', 'device_types_count', 'users_count', 'latest_users', 'latest_devices'));
     }
 }

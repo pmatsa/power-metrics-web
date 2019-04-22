@@ -11,7 +11,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{{ $sectors}}</h3>
+                <h3>{{ $sectors_count }}</h3>
 
                 <p> καταχωρημένοι τομείς </p>
               </div>
@@ -26,7 +26,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{ $devices }}</h3>
+                <h3>{{ $devices_count }}</h3>
 
                 <p>καταχωρημένες συσκευές</p>
               </div>
@@ -41,7 +41,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3> {{ $device_types }}</h3>
+                <h3> {{ $device_types_count }}</h3>
 
                 <p>καταχωρημένοι τύποι συσκευών</p>
               </div>
@@ -56,7 +56,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3> {{ $users }}</h3>
+                <h3> {{ $users_count }}</h3>
 
                 <p>καταχωρημένοι χρήστες</p>
               </div>
@@ -68,6 +68,64 @@
           </div>
           <!-- ./col -->
 
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-6 col-6">
+          <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Τελευταίες 5 συσκευές</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <tbody><tr>
+                    <th>{{ trans('global.device.fields.uid') }}</th>
+                    <th>{{ trans('global.device.fields.name') }}</th>
+                    <th>{{ trans('global.device.fields.sector') }}</th>
+                    <th>{{ trans('global.device.fields.device_type') }}</th>
+                    <th>{{ trans('global.device.fields.created_at') }}</th>
+                  </tr>
+                  @foreach($latest_devices as $device)
+                    <tr>
+                      <td>{{ $device->uid}}</td>
+                      <td>{{ $device->name}}</td>
+                      <td>{{ $device->sector->name}}</td>
+                      <td><span class="badge bg-info">{{ $device->device_type->name }}</span></td>
+                      <td>{{ $device->created_at}}</td>
+                    </tr>
+                  @endforeach
+                </tbody></table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+          <div class="col-lg-6 col-6">
+          <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Τελευταίοι 5 χρήστες</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <table class="table table-striped">
+                  <tbody><tr>
+                    <th>{{ trans('global.user.fields.name') }}</th>
+                    <th>{{ trans('global.user.fields.email') }}</th>
+                    <th>{{ trans('global.user.fields.created_at') }}</th>
+                  </tr>
+                  @foreach($latest_users as $user)
+                    <tr>
+                      <td>{{ $user->name}}</td>
+                      <td>{{ $user->email}}</td>
+                      <td>{{ $user->created_at}}</td>
+                    </tr>
+                  @endforeach
+                </tbody></table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
         </div>
     </div>
 </div>
