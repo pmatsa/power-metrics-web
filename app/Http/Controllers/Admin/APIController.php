@@ -9,7 +9,7 @@ class APIController extends Controller
 {
 
     private $client = null;
-    const API_URL = 'http://176.16.1.200:5984/mer-power';
+    const API_URL = 'http://172.16.1.200:5984/power';
 
     /**
      * Create a new controller instance.
